@@ -7,3 +7,5 @@
 .  
 .  
 ____
+## Шар
+![Шар](https://ykl-res.azureedge.net/56d32922-0041-481c-bcc6-73ee60d7bfff/Lode2.png)
