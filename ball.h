@@ -20,6 +20,9 @@ public:
 	double GetyQ();
 	double GetzQ();
 
+	double Getradiusxyz();		//Расчёт радиуса в случае задания по координатам
+	double Getsquare();		//Расчёт площади шара
+	double Getvolume();		//Расчёт объёма шара
 
 	void Setradius(double valueradius);
 	void Setx(double valuex);
@@ -30,5 +33,5 @@ public:
 	void SetyQ(double valueyQ);
 	void SetzQ(double valuezQ);
 
-	void show();
+	void Show();
 };
