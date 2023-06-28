@@ -21,9 +21,9 @@ Torus::Torus(const Torus& obj)
 	this->distance = obj.distance;
 }
 Torus::~Torus() {}
-double Torus::get_volume() { return volume = 2 * PI * PI * distance * radius * radius; }
+double Torus::get_volume() { return volume = 2 * PI * PI * distance * radius * radius; } // Рассчет объёма тора по формуле 
 double Torus::get_radius() { return radius; }
-double Torus::get_surface_area() { return surface_area = 4 * PI * PI * radius * distance; }
+double Torus::get_surface_area() { return surface_area = 4 * PI * PI * radius * distance; } // Рассчет площади поверхности тора по формуле
 double Torus::get_distance() { return distance; }
 
 void Torus::set_volume(double volume) { this->volume = volume; }
