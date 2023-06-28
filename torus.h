@@ -3,38 +3,31 @@
 
 using namespace std;
 
-class Torus
+class Torus // Родительский класс "тор"
 {
  public:
-
-	double volume;
-	double surface_area;
+	double radius; // Радиус окружности тора 
+	double volume; // Объём тора
+	double surface_area; // Плозадь поверхности тора
+	double distance; // Расстояние от центра окружности тора до центральной оси 
 	Torus();
-	Torus(double volume, double surface_area);
+	Torus(double volume, double surface_area, double radius, double distance);
 	Torus(const Torus& obj);
 	~Torus();
 	double volume;
 	double surface_area;
+	double radius;
+	double distance;
 
-	void set(double	volume);
-	void set(double surface_area);
+	double get_volume();
+	double get_surface_area();
+	double get_radius();
+	double get_distance();
+
+	void set_volume(double	volume);
+	void set_surface_area(double surface_area);
+	void set_radius(double radius);
+	void set_distance(double distance);
 	
 	void show();
-};
-
-class Toroidal_polyhedron :public Torus
-{
-private:
-	unsigned int facets;
-	unsigned int tops;
- public:
-	Toroidal_polyhedron();
-	Toroidal_polyhedron(double volume, double surface_area, unsigned int Facets, unsigned int Tops):Torus(volume, surface_area){}
-	Toroidal_polyhedron(const Toroidal_polyhedron& obj) :Torus(obj) {}
-	~Toroidal_polyhedron();
-	void set(double	Volume);
-	void set(double Surface_area);
-	void set(unsigned int Facets);
-	void set(unsigned int Tops);
-
 };
