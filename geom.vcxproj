@@ -136,6 +136,7 @@
     <ClCompile Include="ball.cpp" />
     <ClCompile Include="cilinder.cpp" />
     <ClCompile Include="cone.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="torus.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
