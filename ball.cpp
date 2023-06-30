@@ -1,4 +1,5 @@
-﻿#include <iostream>
+
+#include <iostream>
 #include <cmath>
 #include "ball.h"
 # define PI 3.14
