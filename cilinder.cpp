@@ -34,7 +34,7 @@ Getvolume()
 
 Show() 
 {
-  cout << "X = " << x << "\nY = " << y << "\nZ = " << z  << "\nXq = " << xQ << "\nYq = " << yQ << "\nZq = " << zQ << "\nRadius = " << radius << "\nSquare = " << square << "\nVolume = " << volume << endl << endl;
+  cout << "\nRadius = " << radius << "\nSquare = " << square << "\nVolume = " << volume << endl << endl;
 }
 
 int main() //Тестовые данные
