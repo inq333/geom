@@ -12,18 +12,6 @@ Seth(double valueh)
 {
   h = valueh;
 }
-Setx(double valuex) 
-{
-  x = valuex;
-}
-Sety(double valuey) 
-{
-  y = valuey;
-}
-Setz(double valuez) 
-{
-  z = valuez;
-}
 
 Getradius() 
 {
@@ -32,18 +20,6 @@ Getradius()
 Geth()
 {
   return h;
-}
-Getx() 
-{
-  return x;
-}
-Gety() 
-{
-  return y;
-}
-Getz() 
-{
-  return z;
 }
 
 Getsquare() 
@@ -59,4 +35,12 @@ Getvolume()
 Show() 
 {
   cout << "X = " << x << "\nY = " << y << "\nZ = " << z  << "\nXq = " << xQ << "\nYq = " << yQ << "\nZq = " << zQ << "\nRadius = " << radius << "\nSquare = " << square << "\nVolume = " << volume << endl << endl;
+}
+
+int main() //Тестовые данные
+{		
+	ball a;
+	a.Getsquare();
+	a.Getvolume();
+	a.Show();
 }
