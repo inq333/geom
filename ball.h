@@ -4,34 +4,33 @@ class ball
 {
 private:
 
-	double radius;		//Радиус
-	double square, volume;		//Площадь, Объём
-	double x, y, z;		//Задание координат центральной точки
-	double xQ, yQ, zQ;		//Задание координат точки, лежащей на поверхности
-	
+	float radius;		//Радиус
+	float x, y, z;		//Задание координат центральной точки
+	float xQ, yQ, zQ;		//Задание координат точки, лежащей на поверхности
+
 public:
 
-	double Getradius();
-	double Getx();
-	double Gety();
-	double Getz();
+	float Getradius();
+	float Getx();
+	float Gety();
+	float Getz();
 
-	double GetxQ();
-	double GetyQ();
-	double GetzQ();
+	float GetxQ();
+	float GetyQ();
+	float GetzQ();
+	
+	float radiusxyz();		//Расчёт радиуса в случае задания по координатам
+	float square();		//Расчёт площади шара
+	float volume();		//Расчёт объёма шара
 
-	double Getradiusxyz();		//Расчёт радиуса в случае задания по координатам
-	double Getsquare();		//Расчёт площади шара
-	double Getvolume();		//Расчёт объёма шара
+	void Setradius(float valueradius);
+	void Setx(float valuex);
+	void Sety(float valuey);
+	void Setz(float valuez);
 
-	void Setradius(double valueradius);
-	void Setx(double valuex);
-	void Sety(double valuey);
-	void Setz(double valuez);
-
-	void SetxQ(double valuexQ);
-	void SetyQ(double valueyQ);
-	void SetzQ(double valuezQ);
+	void SetxQ(float valuexQ);
+	void SetyQ(float valueyQ);
+	void SetzQ(float valuezQ);
 
 	void Show();
 };
