@@ -67,7 +67,7 @@ float ball::volume() {
 void ball::Show() {
 	cout << "X = " << x << "\nY = " << y << "\nZ = " << z  << "\nXq = " << xQ << "\nYq = " << yQ << "\nZq = " << zQ << "\nRadius = " << radius << "\nSquare = " << this->square() << "\nVolume = " << this->volume() << endl << endl;
 }
-int main() {		//Тестовые данныe
+int main() {		//Тестовыe данныe
 	ball a;
 	a.SetxQ(3.0);
 	a.SetyQ(4.0);

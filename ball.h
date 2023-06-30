@@ -20,7 +20,7 @@ public:
 	float GetzQ();
 	
 	float radiusxyz();		//Расчёт радиуса в случае задания по координатам
-	float square();		//Расчёт площади шара
+	float square();		//Расчёт плoщади шара
 	float volume();		//Расчёт объёма шара
 
 	void Setradius(float valueradius);
