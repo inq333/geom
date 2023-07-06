@@ -7,6 +7,9 @@ private:
     double cone_height;
 public:
     Cone(double cone_radius, double cone_height);
+    Cone();
+    Cone(const Cone& obj);
+    ~Cone();
     std::tuple<double, double, double> vertex();
     double cone_base_area();
     double cone_lateral_area();
