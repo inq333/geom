@@ -1,10 +1,14 @@
 #include "cone.h"
 #include <cmath>
 
+Cone::Cone(): cone_radius(0.0), cone_height(0.0) {}
 Cone::Cone(double cone_radius, double cone_height) {
     this->cone_radius = cone_radius;
     this->cone_height = cone_height;
 }
+Cone::Cone(const Cone& obj) { this->cone_radius = obj.cone_radius; this->cone_height = obj.cone_height; }
+Cone::~Cone() {}
+
 std::tuple<double, double, double> Cone::vertex() {
     return std::make_tuple(0.0, 0.0, cone_height);
 }
