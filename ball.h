@@ -1,36 +1,40 @@
-﻿#pragma once
+#pragma once
 using namespace std;
 class ball
 {
 private:
 
-	float radius;		//Радиус
-	float x, y, z;		//Задание координат центральной точки
-	float xQ, yQ, zQ;		//Задание координат точки, лежащей на поверхности
+    float radius;		//Радиус
+    float x, y, z;		//Задание координат центральной точки
+    float xQ, yQ, zQ;		//Задание координат точки, лежащей на поверхности
 
 public:
+    ball();
+    ball(float radius);
+    ball(const ball& obj); //upd: отсутствовали конструкторы и деструктор.
+    ~ball();
 
-	float Getradius();
-	float Getx();
-	float Gety();
-	float Getz();
+    float Getradius();
+    float Getx();
+    float Gety();
+    float Getz();
 
-	float GetxQ();
-	float GetyQ();
-	float GetzQ();
-	
-	float radiusxyz();		//Расчёт радиуса в случае задания по координатам
-	float square();		//Расчёт плoщади шара
-	float volume();		//Расчёт объёма шара
+    float GetxQ();
+    float GetyQ();
+    float GetzQ();
 
-	void Setradius(float valueradius);
-	void Setx(float valuex);
-	void Sety(float valuey);
-	void Setz(float valuez);
+    float radiusxyz();		//Расчёт радиуса в случае задания по координатам
+    float square();		//Расчёт плoщади шара
+    float volume();		//Расчёт объёма шара
 
-	void SetxQ(float valuexQ);
-	void SetyQ(float valueyQ);
-	void SetzQ(float valuezQ);
+    void Setradius(float valueradius);
+    void Setx(float valuex);
+    void Sety(float valuey);
+    void Setz(float valuez);
 
-	void Show();
+    void SetxQ(float valuexQ);
+    void SetyQ(float valueyQ);
+    void SetzQ(float valuezQ);
+
+    void Show();
 };
