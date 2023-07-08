@@ -3,77 +3,75 @@
 #include "ball.h"
 # define PI 3.14
 
+ball::ball() : radius(0.0) {}
+
+ball::ball(float radius) { this->radius = radius; }
+
+ball::ball(const ball& obj) { this->radius = obj.radius; }
+
+ball::~ball() {}
+
 void ball::Setradius(float valueradius) {
-	radius = valueradius;
+    radius = valueradius;
 }
 void ball::Setx(float valuex) {
-	x = valuex;
+    x = valuex;
 }
 void ball::Sety(float valuey) {
-	y = valuey;
+    y = valuey;
 }
 void ball::Setz(float valuez) {
-	z = valuez;
+    z = valuez;
 }
 
 void ball::SetxQ(float valuexQ) {
-	xQ = valuexQ;
+    xQ = valuexQ;
 }
 void ball::SetyQ(float valueyQ) {
-	yQ = valueyQ;
+    yQ = valueyQ;
 }
 void ball::SetzQ(float valuezQ) {
-	zQ = valuezQ;
+    zQ = valuezQ;
 }
 
 
 float ball::Getradius() {
-	return radius;
+    return radius;
 }
 float ball::Getx() {
-	return x;
+    return x;
 }
 float ball::Gety() {
-	return y;
+    return y;
 }
 float ball::Getz() {
-	return z;
+    return z;
 }
 
 float ball::GetxQ() {
-	return xQ;
+    return xQ;
 }
 float ball::GetyQ() {
-	return yQ;
+    return yQ;
 }
 float ball::GetzQ() {
-	return zQ;
+    return zQ;
 }
 
 
 float ball::radiusxyz() {
-	return radius = sqrt((xQ - x) * (xQ - x) + (yQ - y) * (yQ - y) + (zQ - z) * (zQ - z));
+    return sqrt((xQ - x) * (xQ - x) + (yQ - y) * (yQ - y) + (zQ - z) * (zQ - z));
 }
 
 float ball::square() {
-	return 4.0 * PI * radius * radius;
+    return 4.0 * PI * radius * radius;
 }
 
 float ball::volume() {
-	return 4.0 / 3.0 * PI * radius * radius * radius;
+    return 4.0 / 3.0 * PI * radius * radius * radius;
 }
 
 void ball::Show() {
-	cout << "X = " << x << "\nY = " << y << "\nZ = " << z  << "\nXq = " << xQ << "\nYq = " << yQ << "\nZq = " << zQ << "\nRadius = " << radius << "\nSquare = " << this->square() << "\nVolume = " << this->volume() << endl << endl;
+    cout << "X = " << x << "\nY = " << y << "\nZ = " << z  << "\nXq = " << xQ << "\nYq = " << yQ << "\nZq = " << zQ << "\nRadius = " << radius << "\nSquare = " << this->square() << "\nVolume = " << this->volume() << endl << endl;
 }
-int main() {		//Тестовыe данныe
-	ball a;
-	a.SetxQ(3.0);
-	a.SetyQ(4.0);
-	a.SetzQ(5.0);
-	a.Setx(2.0);
-	a.Sety(6.0);
-	a.Setz(7.0);
-	a.Setradius(4.0);
-	a.Show();
-}
+
