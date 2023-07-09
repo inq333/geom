@@ -1,33 +1,29 @@
 #pragma once
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-class Torus // Родительский класс "тор"
+class Torus
 {
+ private:
+    float radius;
+    float distance;
  public:
-	double radius; // Радиус окружности тора 
-	double volume; // Объём тора
-	double surface_area; // Плозадь поверхности тора
-	double distance; // Расстояние от центра окружности тора до центральной оси 
-	Torus();
-	Torus(double volume, double surface_area, double radius, double distance);
-	Torus(const Torus& obj);
-	~Torus();
-	double volume;
-	double surface_area;
-	double radius;
-	double distance;
+    Torus();
+    Torus(float radius, float distance);
+    Torus(const Torus& obj);
+    ~Torus();
 
-	double get_volume();
-	double get_surface_area();
-	double get_radius();
-	double get_distance();
 
-	void set_volume(double	volume);
-	void set_surface_area(double surface_area);
-	void set_radius(double radius);
-	void set_distance(double distance);
-	
-	void show();
+    float get_radius();
+    float get_distance();
+
+    double surface_area();
+    double volume();
+
+    void set_radius(float radius);
+    void set_distance(float distance);
+
+    void show();
 };
